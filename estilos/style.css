@@ -1,0 +1,137 @@
+Certo, vamos aumentar a largura dos campos de entrada no formulário de cadastro (.cadastro-box).
+
+1. Modificações no CSS (style.css):
+
+Vamos ajustar a propriedade width dos seletores input[type="text"] e input[type="file"].
+
+CSS
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, #007bff, #66a3ff);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin: 0;
+}
+
+.header-image img {
+    max-width: 20%;
+    height: auto;
+    display: block;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.1);
+    transform: rotate(45deg);
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 10px;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.search-box, .cadastro-box {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 10px auto;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 2px;
+    font-weight: 600;
+}
+
+input[type="text"],
+input[type="file"] {
+    width: 80%; /* Aumenta a largura para 70% */
+    padding: 6px;
+    margin-bottom: 3px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="file"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: auto;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#resultados div {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+#resultados div:last-child {
+    border-bottom: none;
+}
+
+img {
+    max-width: 40px;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+}
+
+/* Adicionando centralização dos botões */
+.cadastro-box form, .search-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cadastro-box form button, .search-box button {
+    width: auto;
+}
