@@ -11,7 +11,7 @@ header {
     background: linear-gradient(135deg, #007bff, #66a3ff);
     color: #fff;
     text-align: center;
-    padding: 8px 0;
+    padding: 5px 0; /* Diminui o padding do header */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     position: relative;
     overflow: hidden;
@@ -20,7 +20,7 @@ header {
 }
 
 .header-image img {
-    max-width: 10%;
+    max-width: 12%;
     height: auto;
     display: block;
 }
@@ -46,7 +46,8 @@ header::before {
 h1 {
     text-align: center;
     color: #ffffff;
-    margin-bottom: 20px;
+    margin-bottom: 5px; /* Diminui o margin-bottom do h1 */
+    font-size: 1.2em; /* Diminui o tamanho da fonte do h1 */
 }
 
 .search-box, .cadastro-box {
@@ -55,7 +56,7 @@ h1 {
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     margin: 10px auto;
-    width: 70%;
+    width: 80%; /* Aumenta a largura das caixas */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -69,9 +70,9 @@ label {
 
 input[type="text"],
 input[type="file"] {
-    width: 80%; /* Aumenta a largura para 70% */
-    padding: 6px;
-    margin-bottom: 3px;
+    width: 90%; /* Aumenta a largura dos campos de input */
+    padding: 8px; /* Aumenta o padding dos campos de input */
+    margin-bottom: 5px; /* Aumenta o margin-bottom dos campos de input */
     border: 1px solid #ddd;
     border-radius: 6px;
     box-sizing: border-box;
