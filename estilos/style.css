@@ -1,11 +1,3 @@
-Certo, vamos aumentar a largura dos campos de entrada no formulário de cadastro (.cadastro-box).
-
-1. Modificações no CSS (style.css):
-
-Vamos ajustar a propriedade width dos seletores input[type="text"] e input[type="file"].
-
-CSS
-
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
@@ -19,7 +11,7 @@ header {
     background: linear-gradient(135deg, #007bff, #66a3ff);
     color: #fff;
     text-align: center;
-    padding: 10px 0;
+    padding: 8px 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     position: relative;
     overflow: hidden;
@@ -28,7 +20,7 @@ header {
 }
 
 .header-image img {
-    max-width: 20%;
+    max-width: 10%;
     height: auto;
     display: block;
 }
@@ -46,14 +38,14 @@ header::before {
 
 .container {
     max-width: 800px;
-    margin: 20px auto;
+    margin: 0px auto;
     padding: 10px;
     text-align: center;
 }
 
 h1 {
     text-align: center;
-    color: #007bff;
+    color: #ffffff;
     margin-bottom: 20px;
 }
 
@@ -127,7 +119,7 @@ img {
 
 /* Adicionando centralização dos botões */
 .cadastro-box form, .search-box {
-    display: flex;
+    display: flex; 
     flex-direction: column;
     align-items: center;
 }
